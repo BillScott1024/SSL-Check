@@ -6,6 +6,7 @@ install:
   - npm i
 script:
   - npm run build
+  - curl https://suka.js.org/CheckSSL/ct.json > public/ct.json
 branches:
   only:
     - master

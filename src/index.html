@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Certificate Transparency - SukkaLab</title>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.suka.moe/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.suka.moe/favicon/favicon-32x32.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" itemprop="description" content="Sukka 的 SSL 证书透明度报告">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suka.css@0.1.2">
+    <style>
+        .item-title {
+            color: #adadad
+        }
+        .ui.table tr td,
+        .ui.table,
+        .ui.table tbody {
+            border: none;
+        }
+        .ui.table tr td {
+            padding: .1rem .3rem
+        }
+    </style>
+    <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3"></script><script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script><![endif]-->
+    <meta property="og:title" content="Certificate Transparency - SukkaLab">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://lab.suka.moe/ssl">
+    <meta property="og:description" content="Sukka 的 SSL 证书透明度报告">
+    <meta name="twitter:card" content="summary">
+</head>
+
+<body class="sk-p-4 sk-pt-8 sk-pb-6">
+    <h1 class="ui center aligned header">
+        <i id="icon" class="expeditedssl icon" data-position="left center" style="color: #009688;"></i>Certificate Transparency</h1>
+    <div class="ui container sk-pt-4">
+        <div class="ui container two column stackable grid container" id="result">
+
+            <div class="column" v-for="item in items">
+                <div class="ui segment">
+                    <h3 class="ui floated header sk-pl-2">suka.moe&nbsp;&nbsp;
+                        <small class="sk-text-success">Valid</small>
+                    </h3>
+                    <div class="ui clearing divider"></div>
+                    <div class="sk-pl-2">
+                        <table class="ui collapsing table">
+                            <tbody>
+                                <tr>
+                                    <td class="item-title sk-text-right">Last check</td>
+                                    <td>2018-08-08 14:27</td>
+                                </tr>
+                                <tr>
+                                    <td class="item-title sk-text-right">Subject</td>
+                                    <td>suka.moe</td>
+                                </tr>
+                                <tr>
+                                    <td class="item-title sk-text-right">Valid from</td>
+                                    <td>2018-08-08 14:27</td>
+                                </tr>
+                                <tr>
+                                    <td class="item-title sk-text-right">Valid until</td>
+                                    <td>2018-08-08 14:27</td>
+                                </tr>
+                                <tr>
+                                    <td class="item-title sk-text-right">Issuer</td>
+                                    <td>Let's Encrypt Authority X2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+    <!--<script type="text/javascript">
+        $.getJSON("/ct.json", function (data) {
+            $.each(data, function (index, value) {
+                $("#result").append(`
+                    
+                `);
+            });
+        });
+    </script>-->
+</body>
+
+</html>
