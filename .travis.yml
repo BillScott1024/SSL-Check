@@ -4,9 +4,13 @@ node_js:
   - "10"
 install:
   - npm i
+  - git clone https://github.com/SukkaW/CheckSSL.git --depth=2
 script:
   - npm run build
-  - curl https://suka.js.org/CheckSSL/ct.json > public/ct.json
+  - cd CheckSSL
+  - chmod +x checker.sh
+  - ./checker.sh
+  - cp -rf output/ct.json ../public/ct.json
 branches:
   only:
     - master
