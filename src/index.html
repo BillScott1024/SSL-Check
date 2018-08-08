@@ -45,7 +45,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
     <script type="text/javascript">
-        $.getJSON("/ct.json", function (data) {
+        $.getJSON("./ct.json", function (data) {
             $.each(data, function (index, value) {
                 $("#result").append(`
                     <div class="column" v-for="item in items">
