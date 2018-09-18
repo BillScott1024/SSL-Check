@@ -9,7 +9,7 @@ script:
   - npm run build
   - cd CheckSSL
   - chmod +x checker.sh
-  - ./checker.sh suka.moe www.suka.moe blog.suka.moe lab.suka.moe cdn.suka.moe ping.suka.moe zeit-world.suka.moe theme.suka.moe suka.js.org
+  - ./checker.sh skk.moe www.skk.moe blog.skk.moe lab.skk.mo ping.skk.moe notes.skk.moe suka.js.org
   - cp -rf ./output/ct.json ../public/ct.json
 branches:
   only:
