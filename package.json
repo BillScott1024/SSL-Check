@@ -7,7 +7,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "del": "4.0.0",
+        "del": "4.1.0",
         "gulp": "4.0.0",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "4.0.0",
