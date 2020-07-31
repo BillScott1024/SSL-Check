@@ -4,7 +4,7 @@ node_js:
   - "10"
 install:
   - npm i
-  - git clone https://github.com/SukkaW/CheckSSL.git --depth=2
+  - git clone https://github.com/ChenYFan/CheckSSL --depth=2
 script:
   - npm run build
   - cd CheckSSL
