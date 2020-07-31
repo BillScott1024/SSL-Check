@@ -11,6 +11,7 @@ script:
   - chmod +x checker.sh
   - ./checker.sh blog.cyfan.top
   - cp -rf ./output/ct.json ../public/ct.json
+  - echo "ssl.cyfan.top" > ../public/CNAME
 branches:
   only:
     - master
