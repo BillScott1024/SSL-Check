@@ -11,7 +11,7 @@ script:
   - chmod +x checker.sh
   - ./checker.sh extingstudio.com www.extingstudio.com
   - cp -rf ./output/ct.json ../public/ct.json
-  - echo "ssl.cyfan.top" > ../public/CNAME
+  - echo "ssl.extingstudio.com" > ../public/CNAME
 branches:
   only:
     - master
