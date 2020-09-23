@@ -9,7 +9,7 @@ script:
   - npm run build
   - cd CheckSSL
   - chmod +x checker.sh
-  - ./checker.sh extingstudio.com www.extingstudio.com ssl.extingstudio.com game.extingstudio.com api-artitalk.extingstudio.com traffic.extingstudio.com editor.extingstudio.com
+  - ./checker.sh extingstudio.com www.extingstudio.com ssl.extingstudio.com status.extingstudio.com blog.extingstudio.com game.extingstudio.com api-artitalk.extingstudio.com traffic.extingstudio.com editor.extingstudio.com eu.extingstudio.com donate.extingstudio.com leancloud.extingstudio.com
   - cp -rf ./output/ct.json ../public/ct.json
   - echo "ssl.extingstudio.com" > ../public/CNAME
 branches:
